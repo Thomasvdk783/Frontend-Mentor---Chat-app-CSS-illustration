@@ -1,0 +1,321 @@
+/* Style css for simple Booking frontendmentor challenge */
+
+body {
+    max-width: 1440px;
+    font-family: 'Rubik', sans-serif;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg-left {
+    position: absolute;
+    width:435px;
+    height: 700px;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.bg-right {
+    position: absolute;
+    width:435px;
+    height: 700px;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    background: linear-gradient(hsla(293, 100%, 63%, 0.034), hsla(264, 100%, 61%, 0.034));
+}
+
+main {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width:1000px;
+}
+
+.svg {
+    width: 15px;
+    height: 15px;
+}
+
+/* 
+Smartphone section 
+*/
+
+.smartphone-section {
+    width:47%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+}
+
+.smartphone {
+    height: auto;
+    width: 300px;
+    font-size: 12px;
+    background-color: #fff;
+    border-radius:50px;
+    border: 20px solid #fff;
+    box-shadow: 0px 10px 30px 0px rgb(194, 194, 194);
+}
+
+.img-avatar {
+    width:35px;
+    height: 35px;
+    border-radius:35px;
+    border: 3px solid #fff;
+}
+
+.img-dogs {
+    width:50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+/* hearder APP */
+.header-app {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.first-section-header-app {
+    width: 200px;
+    height:30px;
+    background-color: #fff;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 0;
+}
+
+.second-section-header-app {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    color: #fff;
+}
+
+.figure-header {
+    padding: 0;
+    margin-left:-40px;
+    margin-right:0;
+}
+
+.id-avatar-header {
+    margin-left:-30px;
+    margin-right:50px;
+}
+
+.id-avatar-header > h3 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.id-avatar-header > p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: hsl(276, 100%, 81%);
+}
+
+.bg-conv-app {
+    background-color:hsl(270, 20%, 96%);
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    width:auto;
+    padding-right: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.first-message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width:60%;
+}
+
+.text-left-side {
+    background-color: hsl(0, 0%, 87%);
+    border-radius:15px;
+    color: hsl(276, 55%, 52%);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.message-right-side {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items:flex-end;
+    color: hsl(271, 15%, 43%);
+}
+
+.message-right-side > figure {
+    margin: 0;
+}
+
+.message-right-side > article {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+    width: 60%;
+}
+
+.message-right-side > article > p {
+    background-color: #fff;
+    padding: 10px;
+    border-radius:10px;
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    box-shadow: 0px 10px 10px 0px rgb(212, 212, 212);
+}
+
+.p-second-text-left-side {
+    background-color: hsl(0, 0%, 87%);
+    border-radius:15px;
+    color: hsl(276, 55%, 52%);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 60%;
+}
+
+.price {
+    background: linear-gradient(130deg, hsl(293, 100%, 63%), 
+    hsl(264, 100%, 61%));
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    width: 75%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display:none;
+    background:transparent;
+    border:none;
+    content: '';
+    margin-left: -10px;
+    margin-right: 10px;
+    margin-top: 12px;
+    margin-bottom:12px;
+}
+
+.btn-radio-2 {
+    margin-left: -10px!important;
+}
+
+.btn-radio {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid hsl(289, 100%, 72%);
+    margin-right: 10px;
+}
+
+.price > .btn-radio:hover {
+    background-color: rgb(196, 196, 196);
+}
+
+
+
+.price-input-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.price-number {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 12px;
+}
+
+.respons {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.input-respons {
+    margin-left: 20px;
+    border: none;
+    color: hsl(206, 6%, 79%);
+}
+
+.figure-submit-btn {
+    background: hsl(271, 36%, 24%);
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 0;
+}
+
+
+/* 
+Content right section 
+*/
+
+.content-section {
+    width: 47%;
+}
+
+.content-right-title {
+    color: hsl(271, 36%, 24%);
+}
+
+.content-right-text {
+    color: hsl(270, 7%, 64%);
+    font-size: 16px;
+    line-height: 20pt;
+}
+
+.attribution {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
