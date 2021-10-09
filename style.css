@@ -43,6 +43,64 @@ main {
     width:1000px;
 }
 
+/* 
+Responsive partials 
+*/
+
+@media  screen and (max-width: 700px) {
+    body {
+        max-width:375px;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    main {
+        margin: 0;
+        margin-bottom: 45px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .bg-left {
+        width: 100%;
+        height: 400px;
+        left: -200px;
+    }
+
+    .bg-right {
+        display: none;
+    }
+
+    .attribution {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-section {
+        width: 100%;
+        margin-top: 45px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-right-title {
+        font-size: 28px !important;
+        width: 350px;
+    }
+    .content-right-text {
+        width: 350px;
+    }
+}
+
+
 .svg {
     width: 15px;
     height: 15px;
